@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/src/ClassAverage.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/ClassAverage.java" />
+              <option name="originalContent" value="import java.util.Scanner;&#10;&#10;public class ClassAverage {&#10;    public static  void  main(String[] args) {&#10;&#10;        Scanner input = new Scanner(System.in);&#10;&#10;        int total = 0;&#10;        int gradeCounter = 0;&#10;&#10;        System.out.println(&quot;輸入完成請按ctrl-z結束\n&quot;);&#10;&#10;        while (input.hasNext()){&#10;            try {&#10;                int grade = input.nextInt();&#10;                total += grade;&#10;                gradeCounter++;&#10;            } catch (Exception e) {&#10;                System.out.println(&quot;輸入錯誤，請輸入整數。&quot;);&#10;                input.next(); // 跳過錯誤輸入&#10;            }&#10;        }&#10;&#10;        if(gradeCounter != 0){&#10;            double average = (double) total / gradeCounter;&#10;            System.out.printf(&quot;總分: %d\n&quot;, total);&#10;            System.out.printf(&quot;成績數:%d\n&quot;, gradeCounter);&#10;            System.out.printf(&quot;平均: %.2f\n&quot;, average);&#10;        } else {&#10;            System.out.println(&quot;沒有輸入成績&quot;);&#10;        }&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="import java.util.Scanner;&#10;&#10;public class ClassAverage {&#10;    public static  void  main(String[] args) {&#10;&#10;        Scanner input = new Scanner(System.in);&#10;&#10;        int total = 0;&#10;        int gradeCounter = 0;&#10;&#10;        System.out.println(&quot;輸入完成請按ctrl-z結束\n&quot;);&#10;&#10;        while (input.hasNext()){&#10;            try {&#10;                int grade = input.nextInt();&#10;                total += grade;&#10;                gradeCounter++;&#10;            } catch (Exception e) {&#10;                System.out.println(&quot;輸入錯誤，請輸入整數。&quot;);&#10;                input.next(); // 跳過錯誤輸入&#10;            }&#10;        }&#10;&#10;        if(gradeCounter != 0){&#10;            double average = (double) total / gradeCounter;&#10;            System.out.printf(&quot;總分: %d\n&quot;, total);&#10;            System.out.printf(&quot;成績數:%d\n&quot;, gradeCounter);&#10;            System.out.printf(&quot;平均: %.2f\n&quot;, average);&#10;        } else {&#10;            System.out.println(&quot;沒有輸入成績&quot;);&#10;        }&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
