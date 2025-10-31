@@ -24,7 +24,7 @@ public class Account {
         accountCount++; // 帳戶數量加1
     }
 
-    public Account(String accountNumber, double initialBalance) {
+    public Account(String accountNumber, String ownername, String ownerID, double initialBalance) {
         this(accountNumber, "未知", initialBalance);
     }
 
@@ -44,6 +44,9 @@ public class Account {
         return accountNumber;
     }
 
+
+    private  person owner;
+
     /**
      * 取得帳戶餘額
      * @return 帳戶餘額
@@ -51,6 +54,9 @@ public class Account {
     public double getBalance() {
         return balance;
     }
+
+    private  Date openedDate;
+    private  Time2 openedTime;
 
     /**
      * 取得帳戶擁有者名稱
